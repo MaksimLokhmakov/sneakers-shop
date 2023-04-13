@@ -1,0 +1,33 @@
+.button {
+  cursor: pointer;
+  position: relative;
+  width: 325px;
+  height: 55px;
+  border: none;
+  background: #9dd558;
+  border-radius: 18px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &-back {
+    width: 235px;
+    font-weight: 550;
+    .arrowIconBack {
+      position: absolute;
+      top: 16.5px;
+      left: 15px;
+    }
+  }
+  &-for {
+    width: 325px;
+    .arrowIcon {
+      position: absolute;
+      top: 16.5px;
+      right: 20px;
+    }
+  }
+}

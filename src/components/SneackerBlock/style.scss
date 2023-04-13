@@ -1,0 +1,111 @@
+.block {
+  width: 210px;
+  height: 260px;
+  background: #ffffff;
+  border: 1px solid #f3f3f3;
+  border-radius: 40px;
+  padding: 20px 40px;
+  transition: 0.1s;
+  position: relative;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  .icon-block {
+    &:hover {
+      background-color: #fef0f0;
+      border: 1px solid #fef0f0;
+      svg {
+        path {
+          fill: #ff8585;
+        }
+      }
+    }
+  }
+  &:hover {
+    transform: translateY(-5px);
+    border: 1px solid #f8f8f8;
+    box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.05);
+  }
+  &-text {
+    width: 150px;
+    font-family: Inter;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-bottom: 15px;
+  }
+  .block-bottom {
+    width: 135px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    .icon-block {
+      right: 3px;
+      top: 0;
+      &:hover {
+        background: -webkit-linear-gradient(135deg, rgb(137, 240, 156), rgb(60, 199, 85));
+        background: -moz-linear-gradient(135deg, rgb(137, 240, 156), rgb(60, 199, 85));
+        background: linear-gradient(135deg, rgb(137, 240, 156), rgb(60, 199, 85));
+        border: none;
+        svg {
+          path {
+            fill: #fff;
+          }
+        }
+      }
+    }
+    .block-bottom-price {
+      display: flex;
+      flex-direction: column;
+      .bottom-price-text {
+        width: 40px;
+        height: 13px;
+        font-family: Inter;
+        font-weight: 500;
+        font-size: 11px;
+        text-transform: uppercase;
+        color: #bdbdbd;
+      }
+      .bottom-price {
+        width: 85px;
+        height: 17px;
+        font-family: Inter;
+        font-weight: bold;
+        font-size: 14px;
+        color: #000000;
+      }
+    }
+  }
+}
+
+.icon-block {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: #ffffff;
+  border: 1px solid #f2f2f2;
+  border-radius: 8px;
+  cursor: pointer;
+  svg {
+    path {
+      fill: #d3d3d3;
+    }
+  }
+  &__inBusket {
+    background: -webkit-linear-gradient(135deg, rgb(137, 240, 156), rgb(60, 199, 85));
+    background: -moz-linear-gradient(135deg, rgb(137, 240, 156), rgb(60, 199, 85));
+    background: linear-gradient(135deg, rgb(137, 240, 156), rgb(60, 199, 85));
+    border: none;
+  }
+  &__inFavorite {
+    background-color: #fef0f0;
+    border: 1px solid #fef0f0;
+    svg {
+      path {
+        fill: #ff8585;
+      }
+    }
+  }
+}
